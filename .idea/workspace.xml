@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38556faf-a998-4c3f-93e1-435012bf115f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ .gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ComfyUI-KokoroTTS-Zh.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/copytest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kokoro_zh.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    <list default="true" id="38556faf-a998-4c3f-93e1-435012bf115f" name="Changes" comment="提交忽略文件">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/nodes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +54,7 @@
       <recent name="E:\work_space\python_work\comfyui_node_my\ComfyUI-KokoroTTS-Zh" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.kokoro_zh (1)">
+  <component name="RunManager" selected="Python.copytest (1)">
     <configuration name="copytest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ComfyUI-KokoroTTS-Zh" />
       <option name="ENV_FILES" value="" />
@@ -156,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.kokoro_zh (1)" />
         <item itemvalue="Python.copytest (1)" />
+        <item itemvalue="Python.kokoro_zh (1)" />
         <item itemvalue="Python.copytest" />
         <item itemvalue="Python.kokoro_zh" />
       </list>
@@ -179,6 +168,27 @@
       <option name="presentableId" value="Default" />
       <updated>1745998819299</updated>
     </task>
+    <task id="LOCAL-00001" summary="提交忽略文件">
+      <option name="closed" value="true" />
+      <created>1746023597290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746023597290</updated>
+    </task>
+    <task id="LOCAL-00002" summary="提交忽略文件">
+      <option name="closed" value="true" />
+      <created>1746023614334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746023614334</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交忽略文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交忽略文件" />
   </component>
 </project>

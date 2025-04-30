@@ -47,7 +47,7 @@ class KokoroModelLoader:
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
         # 初始化英文语音管道（不加载模型）
-        en_pipeline = KPipeline(lang_code='z', repo_id=repo_id, model=False)
+        en_pipeline = KPipeline(lang_code='a', repo_id=repo_id, model=False)
 
         # 定义英文发音回调函数
         def en_callable(text):
@@ -222,6 +222,7 @@ class KokoroTTSGenerator:
                 "text": ("KOKORO_TEXT",),
                 "voice_settings": ("KOKORO_VOICE_SETTINGS",),
                 "output_filename": ("STRING", {"default": "kokoro_output.wav", "multiline": False}),
+
             }
         }
 
