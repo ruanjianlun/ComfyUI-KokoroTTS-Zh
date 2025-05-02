@@ -19,15 +19,6 @@ ComfyUI-KokoroTTS-Zh is a collection of extension nodes for ComfyUI that integra
 
 ## Installation
 
-### Requirements
-
-- Python 3.8+
-- ComfyUI
-- PyTorch
-- Other dependencies:
-  - kokoro
-  - soundfile
-  - tqdm
 
 ### Installation Steps
 
