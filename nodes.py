@@ -80,7 +80,7 @@ class KokoroTextInput:
         """
         return {
             "required": {
-                "text": ("STRING", {"default": "欢迎使用KokoroTTS！", "multiline": True}),
+                "text": ("STRING", {"default": "hello KokoroTTS！", "multiline": True}),
             }
         }
 

@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38556faf-a998-4c3f-93e1-435012bf115f" name="Changes" comment="add speed">
+    <list default="true" id="38556faf-a998-4c3f-93e1-435012bf115f" name="Changes" comment="comfy init before">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ .gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/nodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,18 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ruanjianlun"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ruanjianlun&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ruanjianlun/ComfyUI-KokoroTTS-Zh.git",
-    "accountId": "bc5c1240-1c4b-4ee0-b8b7-837a5c44fcb4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ruanjianlun/ComfyUI-KokoroTTS-Zh.git&quot;,
+    &quot;accountId&quot;: &quot;bc5c1240-1c4b-4ee0-b8b7-837a5c44fcb4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -43,19 +47,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.copy.executor&quot;: &quot;Run&quot;,
-    &quot;Python.copytest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.kokoro-zh.executor&quot;: &quot;Run&quot;,
-    &quot;Python.kokoro_zh (1).executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/work_space/python_work/comfyui_node_my/ComfyUI-KokoroTTS-Zh&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.copy.executor": "Run",
+    "Python.copytest (1).executor": "Run",
+    "Python.kokoro-zh.executor": "Run",
+    "Python.kokoro_zh (1).executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/APP_install/ComfyUI/ComfyUI_windows_portable/ComfyUI/custom_nodes/ComfyUI-KokoroTTS-Zh",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\work_space\python_work\comfyui_node_my\ComfyUI-KokoroTTS-Zh" />
@@ -212,13 +216,22 @@
       <option name="project" value="LOCAL" />
       <updated>1746151411940</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="comfy init before">
+      <option name="closed" value="true" />
+      <created>1746153200872</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746153200872</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交忽略文件" />
     <MESSAGE value="添加speed前" />
     <MESSAGE value="add speed" />
-    <option name="LAST_COMMIT_MESSAGE" value="add speed" />
+    <MESSAGE value="comfy init before" />
+    <option name="LAST_COMMIT_MESSAGE" value="comfy init before" />
   </component>
 </project>
