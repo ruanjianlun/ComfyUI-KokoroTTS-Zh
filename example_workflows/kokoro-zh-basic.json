@@ -1,0 +1,333 @@
+{
+  "id": "3106ad86-50ac-4920-8a36-f746a956313b",
+  "revision": 0,
+  "last_node_id": 18,
+  "last_link_id": 18,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "KokoroModelLoader",
+      "pos": [
+        2116.7138671875,
+        -715.233154296875
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "KOKORO_MODEL",
+          "type": "KOKORO_MODEL",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "KOKORO_PIPELINE",
+          "type": "KOKORO_PIPELINE",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KokoroModelLoader"
+      },
+      "widgets_values": [
+        "hexgrad/Kokoro-82M-v1.1-zh"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "easy showAnything",
+      "pos": [
+        3104.44384765625,
+        -270.83203125
+      ],
+      "size": [
+        303.043701171875,
+        115.79228210449219
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "44f067632352c449263e11f0d9b708c9fd30e989",
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "E:\\APP_install\\ComfyUI\\ComfyUI_windows_portable\\ComfyUI\\output\\kokoro_output.wav"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "KokoroVoiceSelector",
+      "pos": [
+        2030.0389404296875,
+        -283.0321960449219
+      ],
+      "size": [
+        607.199951171875,
+        106
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "KOKORO_VOICE_SETTINGS",
+          "type": "KOKORO_VOICE_SETTINGS",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KokoroVoiceSelector"
+      },
+      "widgets_values": [
+        "zm_011",
+        5000,
+        "False"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "Note",
+      "pos": [
+        2042.8692626953125,
+        -86.92668914794922
+      ],
+      "size": [
+        601.0941772460938,
+        88
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "How much silence to insert between paragraphs: 5000 is about 0.2 seconds\n\njoin_sentences  Whether to join sentences in paragraphs 1 and 3"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3,
+      "type": "KokoroTextInput",
+      "pos": [
+        2067.95849609375,
+        -553.268798828125
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "KOKORO_TEXT",
+          "type": "KOKORO_TEXT",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KokoroTextInput"
+      },
+      "widgets_values": [
+        "# ComfyUI：AI绘画的\"超级引擎\"，让你的创意一键变现实！\n\n嘿，大家好！今天要给各位安利一个超强的AI图像生成工具--ComfyUI！不夸张地说，这可能是目前最强大的Stable Diffusion操作界面了！\n\n## 什么是ComfyUI？简单来说就是...\n\nComfyUI就像是给AI绘画装上了\"乐高积木\"系统！它不像其他AI工具那样只能填几个参数就点生成，而是让你通过连接各种功能模块，像搭积木一样自由组合出你想要的任何效果！\n\n想象一下，你可以把提示词、模型、采样器这些\"积木\"随意连接，还能实时看到每一步的变化。简直就是AI绘画师的\"梦想工作台\"！\n\n## 为什么专业人士都在用ComfyUI？\n\n- **完全掌控每个细节**：不再是黑盒操作，你能看到图像是怎么一步步生成的\n- **省显存、跑得快**：同样的电脑，ComfyUI能跑更大更复杂的模型\n- **一次设计，反复使用**：设计好的流程可以保存下来，下次直接加载就能用\n- **想法立刻变现实**：有什么新奇想法，立刻就能搭建出来试试看\n\n我之前用其他工具时总是被限制，有些效果怎么也做不出来。换到ComfyUI后，简直就像打开了新世界的大门！\n\n## 实际用起来是什么感觉？\n\n说实话，刚开始看到那些节点和连线可能会有点懵。但别担心！你可以先用现成的工作流，就像用别人分享的\"食谱\"一样，慢慢就能理解每个节点是干嘛的了。\n\n最爽的是，当你调整一个参数，能立刻看到它对最终图像的影响。这种即时反馈真的超级爽！\n\n而且社区里有超多大神分享的工作流，从人像美化、场景生成到动漫风格转换，应有尽有。你完全可以站在巨人的肩膀上，快速出图！\n\n## 谁适合用ComfyUI？\n\n- 你是**设计师**，想要完全掌控AI生成的每个细节\n- 你是**内容创作者**，需要快速生成高质量的原创图像\n- 你是**技术爱好者**，想深入了解AI图像生成的原理\n- 你是**普通用户**，但厌倦了其他工具的局限性\n\n即使你是AI新手，只要愿意花一点时间学习，ComfyUI绝对能让你的创作能力提升好几个档次！\n\n## 最后的小建议\n\n开始用ComfyUI的最好方式就是下载它，加载一个现成的工作流，然后开始\"玩\"！别被那些节点吓到，把它们想象成乐高积木，一块一块地了解它们的功能。\n\n相信我，一旦你掌握了ComfyUI，你会惊讶于自己能创造出什么样的图像！\n\n那么，准备好解锁AI创作的新境界了吗？ComfyUI等你来探索！",
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 17,
+      "type": "PreviewAudio",
+      "pos": [
+        3134.251220703125,
+        -489.1464538574219
+      ],
+      "size": [
+        315,
+        88
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 18
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.30",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 4,
+      "type": "KokoroTTSGenerator",
+      "pos": [
+        2674.791015625,
+        -667.3203125
+      ],
+      "size": [
+        315,
+        166
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "KOKORO_MODEL",
+          "link": 2
+        },
+        {
+          "name": "pipeline",
+          "type": "KOKORO_PIPELINE",
+          "link": 6
+        },
+        {
+          "name": "text",
+          "type": "KOKORO_TEXT",
+          "link": 3
+        },
+        {
+          "name": "voice_settings",
+          "type": "KOKORO_VOICE_SETTINGS",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            18
+          ]
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [
+            9
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KokoroTTSGenerator"
+      },
+      "widgets_values": [
+        "kokoro_output.wav",
+        "auto",
+        1.2000000000000002
+      ]
+    }
+  ],
+  "links": [
+    [
+      2,
+      1,
+      0,
+      4,
+      0,
+      "KOKORO_MODEL"
+    ],
+    [
+      3,
+      3,
+      0,
+      4,
+      2,
+      "KOKORO_TEXT"
+    ],
+    [
+      4,
+      2,
+      0,
+      4,
+      3,
+      "KOKORO_VOICE_SETTINGS"
+    ],
+    [
+      6,
+      1,
+      1,
+      4,
+      1,
+      "KOKORO_PIPELINE"
+    ],
+    [
+      9,
+      4,
+      1,
+      8,
+      0,
+      "*"
+    ],
+    [
+      18,
+      4,
+      0,
+      17,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.2839025177495011,
+      "offset": [
+        -1860.0425052034966,
+        862.0502143297559
+      ]
+    },
+    "frontendVersion": "1.17.11",
+    "ue_links": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

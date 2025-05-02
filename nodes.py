@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2025/4/30/周三 16:08
-# @Author  : Administrator
+# @Author  : ruanjianlun
 # @File    : nodes.py
 # KokoroTTS for ComfyUI
 # 将KokoroTTS集成到ComfyUI中的节点
@@ -222,7 +222,8 @@ class KokoroTTSGenerator:
                 "text": ("KOKORO_TEXT",),
                 "voice_settings": ("KOKORO_VOICE_SETTINGS",),
                 "output_filename": ("STRING", {"default": "kokoro_output.wav", "multiline": False}),
-
+                "speed_mode": (["auto", "fixed"], {"default": "auto"}),
+                "fixed_speed": ("FLOAT", {"default": 1.0, "min": 0.5, "max": 2.0, "step": 0.1}),
             }
         }
 
@@ -251,7 +252,7 @@ class KokoroTTSGenerator:
 
     ##############################
 
-    def generate_audio(self, model, pipeline, text, voice_settings, output_filename):
+    def generate_audio(self, model, pipeline, text, voice_settings, output_filename, speed_mode, fixed_speed):
         """
         生成并保存音频
         """
@@ -281,6 +282,17 @@ class KokoroTTSGenerator:
 
         print(f"开始生成语音，使用语音：{voice}")
         print(f"将保存到：{output_path}")
+        print(f"速度模式：{speed_mode}" + (f"，固定速度：{fixed_speed}" if speed_mode == "fixed" else ""))
+
+        # 选择速度回调函数
+        if speed_mode == "auto":
+            speed_function = self.speed_callable
+        else:
+            # 使用固定速度
+            def fixed_speed_callable(_):
+                return fixed_speed
+
+            speed_function = fixed_speed_callable
 
         # 生成语音
         wavs = []
@@ -288,7 +300,7 @@ class KokoroTTSGenerator:
         for paragraph_idx, paragraph in enumerate(tqdm.tqdm(texts)):
             for i, sentence in enumerate(paragraph):
                 # 生成语音
-                generator = pipeline(sentence, voice=voice, speed=self.speed_callable)
+                generator = pipeline(sentence, voice=voice, speed=speed_function)
                 result = next(generator)
                 wav = result.audio
 

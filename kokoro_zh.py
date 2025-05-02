@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2025/4/25/周五 23:31
-# @Author  : Administrator
+# @Author  : ruanjianlun
 # @File    : kokoro_zh.py
 # Therefore it may NOT generalize gracefully to other texts
 # Refer to Usage in README.md for more general usage patterns
@@ -21,13 +21,12 @@ N_ZEROS = 5000
 # Whether to join sentences in paragraphs 1 and 3
 JOIN_SENTENCES = True
 
-# VOICE = 'zf_001' if True else 'zm_010'
-
 '''
 voice 选择支持100个voice
 https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh/tree/main/voices
+VOICE = 'zf_001' if True else 'zm_010'
 '''
-VOICE = 'zf_018' if True else 'zm_010'
+VOICE = 'zm_009' if True else 'zm_010'
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
