@@ -1,0 +1,15 @@
+[project]
+name = "kokorotts-zh"
+description = "Kokoro TTS's Chinese comfyui node, 100 speakers"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["kokoro", "soundfile", "tqdm", "misaki"]
+
+[project.urls]
+Repository = "https://github.com/ruanjianlun/ComfyUI-KokoroTTS-Zh"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "alun123"
+DisplayName = "ComfyUI-KokoroTTS-Zh"
+Icon = ""
